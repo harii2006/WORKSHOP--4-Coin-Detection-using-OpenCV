@@ -27,7 +27,8 @@ plt.title("Original Image")
 plt.axis("off")
 plt.show()
 ```
-<img width="712" height="473" alt="image" src="https://github.com/user-attachments/assets/fd0586b0-3eea-4990-b400-4327cc0b7df9" />
+<img width="533" height="571" alt="image" src="https://github.com/user-attachments/assets/7e43660c-5a64-4824-87e3-3c6a0431585d" />
+
 ```
 Grayscale Image:
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -38,7 +39,8 @@ plt.title("Grayscale Image")
 plt.axis("off")
 plt.show()
 ```
-<img width="717" height="482" alt="image" src="https://github.com/user-attachments/assets/009bc1b2-866b-4f0a-802b-1ad97de7cef3" />
+<img width="542" height="562" alt="image" src="https://github.com/user-attachments/assets/9b4c10cb-9907-4f77-ba43-0bccee9b940b" />
+
 ```
 Thresholding:
 _, thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
@@ -49,7 +51,8 @@ plt.title("Thresholded Image")
 plt.axis("off")
 plt.show()
 ```
-<img width="727" height="482" alt="image" src="https://github.com/user-attachments/assets/fa596f55-9394-4197-902b-53fb55c1ec61" />
+<img width="550" height="573" alt="image" src="https://github.com/user-attachments/assets/98aba016-5da1-4a21-9ee3-79edd405e860" />
+
 ```
 Morphological Opening & Closing
 kernel = np.ones((5, 5), np.uint8)
@@ -74,7 +77,9 @@ plt.axis("off")
 
 plt.show()
 ```
-<img width="917" height="292" alt="image" src="https://github.com/user-attachments/assets/eeee6ec7-8905-44f2-9535-7303e7c46dd9" />
+<img width="912" height="440" alt="image" src="https://github.com/user-attachments/assets/40335840-e115-4694-955b-a738bf376548" />
+
+
 ```
 Blob Detection:
 params = cv2.SimpleBlobDetector_Params()
@@ -112,7 +117,9 @@ plt.show()
 
 print("Number of coins detected using Blob Detection:", len(keypoints))
 ```
-<img width="710" height="477" alt="image" src="https://github.com/user-attachments/assets/b0a34e65-982e-4684-bb83-23bdbc4ed9a8" />
+<img width="560" height="585" alt="image" src="https://github.com/user-attachments/assets/2d3b8e32-6017-45d5-8933-02aa83cc1037" />
+
+
 ```
 Contour Detection
 contours, hierarchy = cv2.findContours(
@@ -153,7 +160,8 @@ print("===== RESULTS =====")
 print("Coins detected using Blob Detection    :", len(keypoints))
 print("Coins detected using Contour Detection :", len(coin_contours))
 ```
-<img width="717" height="482" alt="image" src="https://github.com/user-attachments/assets/3d5e5dae-378d-4c92-933f-07b4d7764701" />
+<img width="567" height="597" alt="image" src="https://github.com/user-attachments/assets/9481e1d9-1a12-4e07-92df-5e591ea09ed2" />
+
 
 Discussion and conclusion:
 ## Result:
